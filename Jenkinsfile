@@ -6,11 +6,11 @@ pipeline {
     }
     
     stages {
-        stage('Git Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/vijkes/FullStack-Blogging-App.git'
-            }
-        }
+        // stage('Git Checkout') {
+        //     steps {
+        //         git branch: 'main', url: 'https://github.com/vijkes/FullStack-Blogging-App.git'
+        //     }
+        // }
         stage('Compile') {
             steps {
                 sh 'mvn compile'
